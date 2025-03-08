@@ -1,5 +1,6 @@
 font pango:iosevka nerd font regular 12
 
+# wallpaper is https://raw.githubusercontent.com/MubinMuhammad/wallpapers/refs/heads/main/grass_field_gruvbox_material.jpg
 output '*' bg ~/Pictures/wallpaper.jpg fill
 exec clipse -listen
 
