@@ -1,0 +1,9 @@
+# lockscreen = https://raw.githubusercontent.com/MubinMuhammad/wallpapers/refs/heads/main/dark_leaves_gruvbox_material.jpg
+image=/home/sunny/Pictures/lockscreen.jpg
+scaling=fill
+
+# indicator
+indicator-caps-lock
+
+# behavior
+show-failed-attempts
