@@ -130,3 +130,7 @@ include /etc/sway/config.d/*
 # input <mouse device id> {
 # 	accel_profile flat
 # }
+input type:touchpad {
+    tap enabled
+    natural_scroll enabled
+}
