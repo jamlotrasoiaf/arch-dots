@@ -4,6 +4,11 @@ font pango:iosevka nerd font regular 12
 output '*' bg ~/Pictures/wallpaper.jpg fill
 exec clipse -listen
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec swayidle -w \
+	timeout 600 'swaylock -f' \
+	timeout 630 'swaymsg "output * power off"' \
+		resume 'swaymsg "output * power on"' \
+        before-sleep 'swaylock -f'
 gaps inner 4
 gaps outer 4
 
