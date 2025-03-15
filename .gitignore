@@ -6,3 +6,5 @@ citra-emu/
 desmume/
 user-dirs.dirs
 user-dirs.locale
+menus/
+QtProject.conf
