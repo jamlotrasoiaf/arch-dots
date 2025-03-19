@@ -23,10 +23,10 @@ cyan    = '#a1c49c'
 white   = '#ebe1d0'
 
 [font]
-size = 14
+size = 13
 
 [font.normal]
-family = "Iosevka Nerd Font"
+family = "Hack Nerd Font Mono"
 style = "Medium"
 
 [terminal.shell]
