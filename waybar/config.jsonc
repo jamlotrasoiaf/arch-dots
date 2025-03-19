@@ -3,10 +3,10 @@
     "spacing": 0,
     "height": 0,
 
-    "margin-top": 8,
-    "margin-right": 8,
-    "margin-bottom": 0,
-    "margin-left": 8,
+    "margin-top": 1,
+    "margin-right": 1,
+    "margin-bottom": 1,
+    "margin-left": 1,
 
     "modules-left": [
         "wlr/taskbar"
