@@ -14,6 +14,11 @@
       <action name="Execute"><command>electron34</command></action>
     </item>
   </menu> <!-- Development -->
+  <menu id="Graphics" label="Graphics">
+    <item label="Document Viewer">
+      <action name="Execute"><command>evince</command></action>
+    </item>
+  </menu> <!-- Graphics -->
   <menu id="Internet" label="Internet">
     <item label="Avahi SSH Server Browser">
       <action name="Execute"><command>/usr/bin/bssh</command></action>
@@ -21,21 +26,24 @@
     <item label="Avahi VNC Server Browser">
       <action name="Execute"><command>/usr/bin/bvnc</command></action>
     </item>
-    <item label="Firefox">
-      <action name="Execute"><command>/usr/lib/firefox/firefox</command></action>
-    </item>
     <item label="Vesktop">
       <action name="Execute"><command>vesktop</command></action>
     </item>
+    <item label="WARP Off">
+      <action name="Execute"><command>/home/sunny/.local/share/warp/warp.off.sh</command></action>
+    </item>
+    <item label="WARP On">
+      <action name="Execute"><command>/home/sunny/.local/share/warp/warp.on.sh</command></action>
+    </item>
+    <item label="Zen Browser">
+      <action name="Execute"><command>/opt/zen-browser-bin/zen-bin</command></action>
+    </item>
   </menu> <!-- Internet -->
-  <menu id="Multimedia" label="Multimedia">
-    <item label="Qt V4L2 test Utility">
-      <action name="Execute"><command>qv4l2</command></action>
+  <menu id="Office" label="Office">
+    <item label="Document Viewer">
+      <action name="Execute"><command>evince</command></action>
     </item>
-    <item label="Qt V4L2 video capture utility">
-      <action name="Execute"><command>qvidcap</command></action>
-    </item>
-  </menu> <!-- Multimedia -->
+  </menu> <!-- Office -->
   <menu id="Settings" label="Settings">
     <item label="GTK Settings">
       <action name="Execute"><command>nwg-look</command></action>
@@ -52,5 +60,10 @@
       <action name="Execute"><command>fish</command></action>
     </item>
   </menu> <!-- System -->
+  <menu id="Other" label="Other">
+    <item label="Cloudflare Zero Trust">
+      <action name="Execute"><command>systemctl --user start warp-taskbar</command></action>
+    </item>
+  </menu> <!-- Other -->
 </menu> <!-- root-menu -->
 </openbox_menu>
