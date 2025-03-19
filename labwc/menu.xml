@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openbox_menu>
+<menu id="root-menu" label="root-menu">
+  <menu id="Accessories" label="Accessories">
+    <item label="File Roller">
+      <action name="Execute"><command>file-roller</command></action>
+    </item>
+    <item label="Nemo">
+      <action name="Execute"><command>nemo</command></action>
+    </item>
+  </menu> <!-- Accessories -->
+  <menu id="Development" label="Development">
+    <item label="Electron 34">
+      <action name="Execute"><command>electron34</command></action>
+    </item>
+  </menu> <!-- Development -->
+  <menu id="Internet" label="Internet">
+    <item label="Avahi SSH Server Browser">
+      <action name="Execute"><command>/usr/bin/bssh</command></action>
+    </item>
+    <item label="Avahi VNC Server Browser">
+      <action name="Execute"><command>/usr/bin/bvnc</command></action>
+    </item>
+    <item label="Firefox">
+      <action name="Execute"><command>/usr/lib/firefox/firefox</command></action>
+    </item>
+    <item label="Vesktop">
+      <action name="Execute"><command>vesktop</command></action>
+    </item>
+  </menu> <!-- Internet -->
+  <menu id="Multimedia" label="Multimedia">
+    <item label="Qt V4L2 test Utility">
+      <action name="Execute"><command>qv4l2</command></action>
+    </item>
+    <item label="Qt V4L2 video capture utility">
+      <action name="Execute"><command>qvidcap</command></action>
+    </item>
+  </menu> <!-- Multimedia -->
+  <menu id="Settings" label="Settings">
+    <item label="GTK Settings">
+      <action name="Execute"><command>nwg-look</command></action>
+    </item>
+  </menu> <!-- Settings -->
+  <menu id="System" label="System">
+    <item label="Alacritty">
+      <action name="Execute"><command>alacritty</command></action>
+    </item>
+    <item label="Avahi Zeroconf Browser">
+      <action name="Execute"><command>/usr/bin/avahi-discover</command></action>
+    </item>
+    <item label="fish">
+      <action name="Execute"><command>fish</command></action>
+    </item>
+  </menu> <!-- System -->
+</menu> <!-- root-menu -->
+</openbox_menu>

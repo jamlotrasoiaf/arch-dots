@@ -19,7 +19,7 @@
 }
 {
     "label" : "logout",
-    "action" : "sway exit",
+    "action" : "labwc --exit",
     "text" : " Logout (E) ",
     "keybind" : "e"
 }

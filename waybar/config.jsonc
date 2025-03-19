@@ -9,7 +9,7 @@
     "margin-left": 8,
 
     "modules-left": [
-        "sway/workspaces"
+        "wlr/taskbar"
     ],
 
     "modules-center": [
@@ -26,10 +26,9 @@
         "pulseaudio"
     ],
 
-    "sway/workspaces": {
-        "disable-scroll": true,
-        "all-outputs": true,
-        "tooltip": false
+    "wlr/taskbar": {
+        "format": "{app_id}",
+        "on-click": "minimize-raise"
     },
 
     "tray": {
