@@ -2,6 +2,7 @@ font pango:iosevka nerd font regular 12
 
 # wallpaper is https://raw.githubusercontent.com/MubinMuhammad/wallpapers/refs/heads/main/grass_field_gruvbox_material.jpg
 output '*' bg ~/.config/pictures/wallpaper.jpg fill
+exec clipse -listen
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec swayidle -w \
 	timeout 600 'swaylock -f' \
@@ -49,7 +50,7 @@ set $menu tofi-drun | xargs swaymsg exec --
 bindsym $mod+Return exec $term
 bindsym $mod+d exec $menu
 bindsym $mod+Shift+q kill
-bindsym $mod+Shift+c reload
+bindsym $mod+Shift+r reload
 bindsym $mod+Shift+e exec wlogout
 bindsym $mod+Print exec grim -g "$(slurp)" - | swappy -f -
 bindsym XF86AudioRaiseVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+
@@ -58,6 +59,7 @@ bindsym XF86AudioMute exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
 bindsym XF86AudioMicMute exec wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle
 bindsym $mod+Shift+period exec brightnessctl -c backlight set +5%
 bindsym $mod+Shift+comma exec brightnessctl -c backlight set 5%-
+bindsym $mod+Shift+c exec alacritty -e sh -c "swaymsg floating enable, move position center; swaymsg resize set 80ppt 80ppt && clipse"
 floating_modifier $mod normal
 
 # more bindings
