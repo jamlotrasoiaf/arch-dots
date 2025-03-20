@@ -41,6 +41,7 @@ tooltip {
     box-shadow: inset 0 -3px transparent;
     padding: 2px 4px;
     color: #c7ab7a;
+    margin: 3px 1;
 }
 
 #taskbar button.active {
