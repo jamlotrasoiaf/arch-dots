@@ -43,12 +43,8 @@ tooltip {
     color: #c7ab7a;
 }
 
-#taskbar button.focused {
+#taskbar button.active {
     color: #ddc7a1;
-}
-
-#taskbar button.urgent {
-    background-color: #e78a4e;
 }
 
 #clock {
