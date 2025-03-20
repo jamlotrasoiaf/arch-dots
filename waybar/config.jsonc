@@ -30,7 +30,7 @@
         "format": "{app_id}",
         "on-click": "minimize-raise",
         "app_ids-mapping": {
-		"org.gnome.FileRoller": "File Roller"
+		"org.gnome.FileRoller": "FileRoller"
 	}
     },
 
