@@ -36,6 +36,8 @@
     <keybind key="W-S-r"><action name="Execute" command="labwc --reconfigure" /></keybind>
     <keybind key="W-S-e"><action name="Execute" command="wlogout" /></keybind>
     <keybind key="W-S-v"><action name="Execute" command="alacritty --class clipse -e 'clipse'" /></keybind>
+    <keybind key="W-S-d"><action name="Execute" command="/home/sunny/.config/labwc/maximize.sh" /></keybind>
+    <keybind key="W-d"><action name="Execute" command="wlrctl toplevel minimize" /></keybind>
     <!--
       Remove a previously defined keybind
       A shorter alternative is <keybind key="W-F4" />
