@@ -5,3 +5,7 @@ nemo-fileroller swaybg swaylock swayidle vesktop-bin waybar wlogout wl-clipboard
 xdg-desktop-portal-wlr polkit-gnome grim slurp swappy wlopm greetd greetd-tuigreet
 noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-hack-nerd xdg-user-dirs firefox brightnessctl
 lswt wlrctl
+
+# things to do
+ln -s ~/dotfiles ~/.config
+mkdir ~/.themes && cp -r labwc/gruvbox-material-dark-blocks ~/.themes

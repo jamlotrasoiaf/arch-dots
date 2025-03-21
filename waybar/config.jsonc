@@ -30,7 +30,9 @@
         "format": "{app_id}",
         "on-click": "minimize-raise",
         "app_ids-mapping": {
-		"org.gnome.FileRoller": "FileRoller"
+		"org.gnome.FileRoller": "FileRoller",
+		"org.pwmt.zathura": "zathura",
+		"com.github.johnfactotum.Foliate": "foliate"
 	}
     },
 
