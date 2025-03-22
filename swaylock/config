@@ -1,5 +1,5 @@
 # lockscreen = https://raw.githubusercontent.com/MubinMuhammad/wallpapers/refs/heads/main/dark_leaves_gruvbox_material.jpg
-image=~/.config/pictures/lockscreen.jpg
+image=~/.config/pictures/lockscreen.png
 scaling=fill
 
 # indicator

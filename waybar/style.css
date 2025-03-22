@@ -14,7 +14,7 @@
 @define-color aqua #689D6A;
 @define-color yellow #D79921;
 @define-color orange #D65D0E;
-@define-color purple2 #D3869B;
+@define-color red1 #FB4934;
 
 * {
     font-family: Hack Nerd Font,sans-serif;
@@ -72,14 +72,14 @@ button {
 
 #taskbar button {
     min-width: 20px;
-    color: @bg3;
+    color: @red;
     font-weight: normal;
     padding: 0;
     margin: 3px 3px 3px 3px;
 }
 
 #taskbar button.active {
-    color: @fg;
+    color: @red1;
     background-color: @bg;
 }
 
@@ -103,8 +103,8 @@ button {
 #battery.charging,
 #battery.plugged,
 #network {
-    background-color: @purple;
-    color: @fg;
+    background-color: @bg0_h;
+    color: @purple;
     padding: 0px 15px;
     margin: 2px 2px 2px 2px;
 }
@@ -114,36 +114,36 @@ button {
 } */
 
 #tray {
-    background-color: @orange;
+    background-color: @bg0_h;
     color: @fg;
     padding: 0px 15px;
     margin: 2px 2px 2px 2px;
 }
 
 #clock {
-    background-color: @red;
-    color: @fg;
+    background-color: @bg0_h;
+    color: @orange;
     padding: 0px 15px;
     margin: 2px 2px 2px 2px;
 }
 
 #memory {
-    background-color: @aqua;
-    color: @fg;
+    background-color: @bg0_h;
+    color: @aqua;
     padding: 0px 15px;
     margin: 2px 2px 2px 2px;
 }
 
 #cpu {
-    background-color: @green;
-    color: @fg;
+    background-color: @bg0_h;
+    color: @green;
     padding: 0px 15px;
     margin: 2px 2px 2px 2px;
 }
 
 #battery {
-    background-color: @yellow;
-    color: @fg;
+    background-color: @bg0_h;
+    color: @yellow;
     padding: 0px 15px;
     margin: 2px 2px 2px 2px;
 }
@@ -161,8 +161,8 @@ button {
 } */
 
 #wireplumber {
-    background-color: @blue;
-    color: @fg;
+    background-color: @bg0_h;
+    color: @blue;
     padding: 0px 15px;
     margin: 2px 2px 2px 2px;
 }
