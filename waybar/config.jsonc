@@ -72,13 +72,12 @@
     "on-click-right": "$TERMINAL -a floatterm -e nethogs"
   },
   "wireplumber": {
-    "format": "{icon}",
+    "format": "{icon}: {volume}%",
     "format-muted": "",
     "format-icons": [
       "",
       " "
     ],
-    "on-click-right": "pavucontrol",
     "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
   },
   "clock": {
