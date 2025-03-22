@@ -2,18 +2,24 @@
  *                      General
  * ----------------------------------------------------- */
 /* Colors */
-@define-color bg  #1D2021;
+@define-color bg0_h #1D2021;
+@define-color bg  #282828;
 @define-color bg2 #504945;
 @define-color bg3 #665C54;
 @define-color fg  #EBDBB2;
 @define-color red #CC241D;
 @define-color blue #458588;
 @define-color purple #B16286;
+@define-color green #98971A;
+@define-color aqua #689D6A;
+@define-color yellow #D79921;
+@define-color orange #D65D0E;
+@define-color purple2 #D3869B;
 
 * {
     font-family: Hack Nerd Font,sans-serif;
     font-size: 14px;
-    border-radius: 0;
+    border-radius: 5px;
     border: none;
     box-shadow: none;
 }
@@ -36,7 +42,8 @@ tooltip label {
 
 window#waybar {
    /* background-color: rgba(16, 20, 25,0.5); */
-    background-color: @bg;
+   /* background-color: @bg; */
+    background-color: transparent;
 
 }
 
@@ -46,23 +53,29 @@ window#waybar.hidden {
 
 #window {
     color: @fg;
-    padding: 0 10px;
+    padding: 0 5px;
 }
 
+button {
+    border: None;
+    padding: 0;
+}
 /* -----------------------------------------------------
  *                  Workspaces
  * ----------------------------------------------------- */
 
 #taskbar {
-  background-color: @bg;
-  padding: 2px 5px;
+    background-color: @bg0_h;
+    padding: 0px 0px;
+    margin: 2px 2px 2px 2px;
 }
 
 #taskbar button {
     min-width: 20px;
-    color: @bg2;
-    padding: 0px 5px;
+    color: @bg3;
     font-weight: normal;
+    padding: 0;
+    margin: 3px 3px 3px 3px;
 }
 
 #taskbar button.active {
@@ -70,37 +83,87 @@ window#waybar.hidden {
     background-color: @bg;
 }
 
+/* #taskbar button:first-child {
+    border-radius: 5px 0 0 5px;
+}
+
+#taskbar button:last-child {
+    border-radius: 0 5px 5px 0;
+} */
+
 /* -----------------------------------------------------
  *                      Modules
  * ----------------------------------------------------- */
 
 #cpu,
-#memory ,
+#memory,
 #battery,
-#pulseaudio,
 #wireplumber,
 #tray,
 #battery.charging,
 #battery.plugged,
 #network {
+    background-color: @purple;
     color: @fg;
-    padding: 0 6px;
+    padding: 0px 15px;
     margin: 2px 2px 2px 2px;
 }
 
-#network.disconnected {
+/* #network.disconnected {
     color: @purple;
+} */
+
+#tray {
+    background-color: @orange;
+    color: @fg;
+    padding: 0px 15px;
+    margin: 2px 2px 2px 2px;
 }
 
 #clock {
+    background-color: @red;
     color: @fg;
-    padding: 0 5px;
+    padding: 0px 15px;
     margin: 2px 2px 2px 2px;
+}
+
+#memory {
+    background-color: @aqua;
+    color: @fg;
+    padding: 0px 15px;
+    margin: 2px 2px 2px 2px;
+}
+
+#cpu {
+    background-color: @green;
+    color: @fg;
+    padding: 0px 15px;
+    margin: 2px 2px 2px 2px;
+}
+
+#battery {
+    background-color: @yellow;
+    color: @fg;
+    padding: 0px 15px;
+    margin: 2px 2px 2px 2px;
+}
+
+/* #battery.charging {
+    background-color: @green;
+}
+
+#battery.plugged {
+    background-color: @green;
 }
 
 #battery.critical:not(.charging) {
     background-color: @red;
+} */
+
+#wireplumber {
+    background-color: @blue;
     color: @fg;
+    padding: 0px 15px;
     margin: 2px 2px 2px 2px;
 }
 
@@ -110,4 +173,13 @@ window#waybar.hidden {
         color: #000000;
     }
 }
+
+.modules-left > widget:first-child > #taskbar {
+    margin-left: 0;
+}
+
+.modules-right > widget:last-child > #taskbar {
+    margin-right: 0;
+}
+
 

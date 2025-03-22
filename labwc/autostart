@@ -1,7 +1,7 @@
 # Example autostart file
 
 # Set background color.
-swaybg -i ~/.config/pictures/wallpaper.jpg >/dev/null 2>&1 &
+swaybg -i ~/.config/pictures/wallpaper.png >/dev/null 2>&1 &
 
 # Configure output directives such as mode, position, scale and transform.
 # Use wlr-randr to get your output names
