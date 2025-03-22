@@ -2,13 +2,13 @@
  *                      General
  * ----------------------------------------------------- */
 /* Colors */
-@define-color bg  #1D2021;
-@define-color bg2 #504945;
-@define-color bg3 #665C54;
-@define-color fg  #EBDBB2;
-@define-color red #CC241D;
-@define-color blue #458588;
-@define-color purple #B16286;
+@define-color bg  #282828;
+@define-color bg2 #525252;
+@define-color bg3 #393939;
+@define-color fg  #D8D8D8;
+@define-color red #DA1E28;
+@define-color blue #78A9FF;
+@define-color purple #BE95FF;
 
 * {
     font-family: Hack Nerd Font,sans-serif;
